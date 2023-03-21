@@ -13,7 +13,7 @@ jobs:
         uses: bryantson/check-member-exists-in-team-actions@v1.0
         with:
           team_slug: ${{ secrets.TEAM_TEST }}
-          org_slug: ${{ secrets.ORG_TEST }
+          org_slug: ${{ secrets.ORG_TEST }}
           gh_token: ${{ secrets.GH_TOKEN }}
 
       - name: Print if member exists
