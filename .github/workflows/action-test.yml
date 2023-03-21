@@ -15,6 +15,7 @@ jobs:
           team_slug: ${{ secrets.TEAM_TEST }}
           org_slug: ${{ secrets.ORG_TEST }}
           gh_token: ${{ secrets.GH_TOKEN }}
+          username: bryantson
 
       - name: Print if member exists
         run: |
