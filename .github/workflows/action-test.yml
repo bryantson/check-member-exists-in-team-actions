@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: University search
         id: check-member
-        uses: check-member-exists-in-team-actions@v1.0
+        uses: bryantson/check-member-exists-in-team-actions@v1.0
         with:
           team_slug: ${{ secrets.TEAM_TEST }}
           org_slug: ${{ secrets.ORG_TEST }
