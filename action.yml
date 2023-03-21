@@ -21,7 +21,7 @@ inputs:
 outputs:
   exists-in-team: 
     description: If the member exists in the team
-    value: ${{ steps.exists-team.outputs.belongs-team }}
+    value: ${{ steps.exists-team.outputs.exists-in-team }}
 
 runs:
   using: composite
