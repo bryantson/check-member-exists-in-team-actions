@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Check if an user exists
     steps:
-      - name: University search
+      - name: Check if member exists
         id: check-member
         uses: bryantson/check-member-exists-in-team-actions@1.0
         with:
