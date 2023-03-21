@@ -38,7 +38,7 @@ runs:
         https://api.github.com/orgs/"$ORG"/teams/"$TEAM"/memberships/"$USERNAME")
 
         if [[ "$EXIST_TEAM" -eq 200 ]]; then
-          echo "exists-in-team=true" >> $GIHUB_OUTPUT
+          echo "exists-in-team=true" >> $GITHUB_OUTPUT
         else
           echo "exists-in-team=false" >> $GITHUB_OUTPUT
         fi
