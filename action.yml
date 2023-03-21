@@ -10,14 +10,16 @@ inputs:
   org_slug:
     description: Name of the organization
     required: true
-    default: ${{ github.repository_owner }}
   team_slug:
     description: Name of Team to check
     required: true
   gh_token:
     description: GitHub Token with right permission
     required: true
-
+  username:
+    description: Type username to check
+    required: true
+   
 outputs:
   exists-in-team: 
     description: If the member exists in the team
@@ -44,3 +46,4 @@ runs:
         ORG: ${{ inputs.org_slug }}
         TEAM: ${{ inputs.team_slug }}
         GH_TOKEN: ${{ inputs.gh_token }}
+        USERNAME: ${{ inputs.username }}
